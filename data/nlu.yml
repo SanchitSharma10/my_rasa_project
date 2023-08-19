@@ -1,0 +1,1595 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: faq/intent_0
+  examples: |
+    - hi, how are you doing?
+- intent: faq/intent_1
+  examples: |
+    - i'm fine. how about yourself?
+- intent: faq/intent_2
+  examples: |
+    - i'm pretty good. thanks for asking.
+- intent: faq/intent_3
+  examples: |
+    - no problem. so how have you been?
+- intent: faq/intent_4
+  examples: |
+    - i've been great. what about you?
+- intent: faq/intent_5
+  examples: |
+    - i've been good. i'm in school right now.
+- intent: faq/intent_6
+  examples: |
+    - what school do you go to?
+- intent: faq/intent_7
+  examples: |
+    - i go to pcc.
+- intent: faq/intent_8
+  examples: |
+    - do you like it there?
+- intent: faq/intent_9
+  examples: |
+    - it's okay. it's a really big campus.
+- intent: faq/intent_10
+  examples: |
+    - good luck with school.
+- intent: faq/intent_11
+  examples: |
+    - how's it going?
+- intent: faq/intent_12
+  examples: |
+    - i'm doing well. how about you?
+- intent: faq/intent_13
+  examples: |
+    - never better, thanks.
+- intent: faq/intent_14
+  examples: |
+    - so how have you been lately?
+- intent: faq/intent_15
+  examples: |
+    - i've actually been pretty good. you?
+- intent: faq/intent_16
+  examples: |
+    - i'm actually in school right now.
+- intent: faq/intent_17
+  examples: |
+    - which school do you attend?
+- intent: faq/intent_18
+  examples: |
+    - i'm attending pcc right now.
+- intent: faq/intent_19
+  examples: |
+    - are you enjoying it there?
+- intent: faq/intent_20
+  examples: |
+    - it's not bad. there are a lot of people there.
+- intent: faq/intent_21
+  examples: |
+    - good luck with that.
+- intent: faq/intent_22
+  examples: |
+    - how are you doing today?
+- intent: faq/intent_23
+  examples: |
+    - i'm doing great. what about you?
+- intent: faq/intent_24
+  examples: |
+    - i'm absolutely lovely, thank you.
+- intent: faq/intent_25
+  examples: |
+    - everything's been good with you?
+- intent: faq/intent_26
+  examples: |
+    - i haven't been better. how about yourself?
+- intent: faq/intent_27
+  examples: |
+    - i started school recently.
+- intent: faq/intent_28
+  examples: |
+    - where are you going to school?
+- intent: faq/intent_29
+  examples: |
+    - i'm going to pcc.
+- intent: faq/intent_30
+  examples: |
+    - how do you like it so far?
+- intent: faq/intent_31
+  examples: |
+    - i like it so far. my classes are pretty good right now.
+- intent: faq/intent_32
+  examples: |
+    - it's an ugly day today.
+- intent: faq/intent_33
+  examples: |
+    - i know. i think it may rain.
+- intent: faq/intent_34
+  examples: |
+    - it's the middle of summer, it shouldn't rain today.
+- intent: faq/intent_35
+  examples: |
+    - that would be weird.
+- intent: faq/intent_36
+  examples: |
+    - yeah, especially since it's ninety degrees outside.
+- intent: faq/intent_37
+  examples: |
+    - i know, it would be horrible if it rained and it was hot outside.
+- intent: faq/intent_38
+  examples: |
+    - 'yes, it would be. '
+- intent: faq/intent_39
+  examples: |
+    - "i really wish it wasn't so hot every day. "
+- intent: faq/intent_40
+  examples: |
+    - me too. i can't wait until winter.
+- intent: faq/intent_41
+  examples: |
+    - i like winter too, but sometimes it gets too cold.
+- intent: faq/intent_42
+  examples: |
+    - i'd rather be cold than hot.
+- intent: faq/intent_43
+  examples: |
+    - it doesn't look very nice outside today.
+- intent: faq/intent_44
+  examples: |
+    - you're right. i think it's going to rain later.
+- intent: faq/intent_45
+  examples: |
+    - in the middle of the summer, it shouldn't be raining.
+- intent: faq/intent_46
+  examples: |
+    - that wouldn't seem right.
+- intent: faq/intent_47
+  examples: |
+    - considering that it's over ninety degrees outside, that would be weird.
+- intent: faq/intent_48
+  examples: |
+    - exactly, it wouldn't be nice if it started raining. it's too hot.
+- intent: faq/intent_49
+  examples: |
+    - i know, you're absolutely right.
+- intent: faq/intent_50
+  examples: |
+    - i wish it would cool off one day.
+- intent: faq/intent_51
+  examples: |
+    - that's how i feel, i want winter to come soon.
+- intent: faq/intent_52
+  examples: |
+    - i enjoy the winter, but it gets really cold sometimes.
+- intent: faq/intent_53
+  examples: |
+    - i know what you mean, but i'd rather be cold than hot.
+- intent: faq/intent_54
+  examples: |
+    - i wish it was a nicer day today.
+- intent: faq/intent_55
+  examples: |
+    - that is true. i hope it doesn't rain.
+- intent: faq/intent_56
+  examples: |
+    - it wouldn't rain in the middle of the summer.
+- intent: faq/intent_57
+  examples: |
+    - it wouldn't seem right if it started raining right now.
+- intent: faq/intent_58
+  examples: |
+    - it would be weird if it started raining in ninety degree weather.
+- intent: faq/intent_59
+  examples: |
+    - any rain right now would be pointless.
+- intent: faq/intent_60
+  examples: |
+    - that's right, it really would be.
+- intent: faq/intent_61
+  examples: |
+    - i want it to cool down some.
+- intent: faq/intent_62
+  examples: |
+    - i know what you mean, i can't wait until it's winter.
+- intent: faq/intent_63
+  examples: |
+    - winter is great. i wish it didn't get so cold sometimes though.
+- intent: faq/intent_64
+  examples: |
+    - it's such a nice day.
+- intent: faq/intent_65
+  examples: |
+    - yes, it is.
+- intent: faq/intent_66
+  examples: |
+    - it looks like it may rain soon.
+- intent: faq/intent_67
+  examples: |
+    - yes, and i hope that it does.
+- intent: faq/intent_68
+  examples: |
+    - why is that?
+- intent: faq/intent_69
+  examples: |
+    - i really love how rain clears the air.
+- intent: faq/intent_70
+  examples: |
+    - me too. it always smells so fresh after it rains.
+- intent: faq/intent_71
+  examples: |
+    - yes, but i love the night air after it rains.
+- intent: faq/intent_72
+  examples: |
+    - really? why is it?
+- intent: faq/intent_73
+  examples: |
+    - because you can see the stars perfectly.
+- intent: faq/intent_74
+  examples: |
+    - i really hope it rains today.
+- intent: faq/intent_75
+  examples: |
+    - isn't it a nice day?
+- intent: faq/intent_76
+  examples: |
+    - it really is.
+- intent: faq/intent_77
+  examples: |
+    - it seems that it may rain today.
+- intent: faq/intent_78
+  examples: |
+    - hopefully it will.
+- intent: faq/intent_79
+  examples: |
+    - how come?
+- intent: faq/intent_80
+  examples: |
+    - i like how clear the sky gets after it rains.
+- intent: faq/intent_81
+  examples: |
+    - i feel the same way. it smells so good after it rains.
+- intent: faq/intent_82
+  examples: |
+    - i especially love the night air when it rains.
+- intent: faq/intent_83
+  examples: |
+    - really? why?
+- intent: faq/intent_84
+  examples: |
+    - the stars look so much closer after it rains.
+- intent: faq/intent_85
+  examples: |
+    - i really want it to rain today.
+- intent: faq/intent_86
+  examples: |
+    - don't you think it's nice out?
+- intent: faq/intent_87
+  examples: |
+    - yes, i think so too.
+- intent: faq/intent_88
+  examples: |
+    - i think that it's going to rain.
+- intent: faq/intent_89
+  examples: |
+    - i hope that it does rain.
+- intent: faq/intent_90
+  examples: |
+    - you like the rain?
+- intent: faq/intent_91
+  examples: |
+    - the sky looks so clean after it rains. i love it.
+- intent: faq/intent_92
+  examples: |
+    - i understand. rain does make it smell cleaner.
+- intent: faq/intent_93
+  examples: |
+    - i love most how it is at night after it rains.
+- intent: faq/intent_94
+  examples: |
+    - how come?
+- intent: faq/intent_95
+  examples: |
+    - you can see the stars so much more clearly after it rains.
+- intent: faq/intent_96
+  examples: |
+    - i really want to go to the beach this weekend.
+- intent: faq/intent_97
+  examples: |
+    - that sounds like fun. what's the weather going to be like?
+- intent: faq/intent_98
+  examples: |
+    - i heard that it's going to be warm this weekend.
+- intent: faq/intent_99
+  examples: |
+    - is it going to be perfect beach weather?
+- intent: faq/intent_100
+  examples: |
+    - i believe so.
+- intent: faq/intent_101
+  examples: |
+    - good. i hope it doesn't cool off this weekend.
+- intent: faq/intent_102
+  examples: |
+    - i know. i really want to go to the beach.
+- intent: faq/intent_103
+  examples: |
+    - but you know that california weather is really unpredictable.
+- intent: faq/intent_104
+  examples: |
+    - you're right. one minute it's hot, and then the next minute it's cold.
+- intent: faq/intent_105
+  examples: |
+    - i really wish the weather would just stay the same.
+- intent: faq/intent_106
+  examples: |
+    - i do too. that way we can have our activities planned ahead of time.
+- intent: faq/intent_107
+  examples: |
+    - i would like to take a trip to the beach this weekend.
+- intent: faq/intent_108
+  examples: |
+    - a trip to the beach would be fun. how is the weather going to be?
+- intent: faq/intent_109
+  examples: |
+    - the forecast says that it will be warm on the weekend.
+- intent: faq/intent_110
+  examples: |
+    - so do you think it'll be perfect weather for the beach?
+- intent: faq/intent_111
+  examples: |
+    - it sounds like it will be.
+- intent: faq/intent_112
+  examples: |
+    - i really hope it doesn't get cold.
+- intent: faq/intent_113
+  examples: |
+    - that would ruin things, i want to go so badly.
+- intent: faq/intent_114
+  examples: |
+    - the weather in california is unpredictable, so you never know.
+- intent: faq/intent_115
+  examples: |
+    - that is true. the weather is constantly changing.
+- intent: faq/intent_116
+  examples: |
+    - it would be nice if the weather would never change.
+- intent: faq/intent_117
+  examples: |
+    - that would be great, then we could plan things sooner.
+- intent: faq/intent_118
+  examples: |
+    - it would be nice to go to the beach sometime this weekend.
+- intent: faq/intent_119
+  examples: |
+    - what's the weather going to be like? i may want to go too.
+- intent: faq/intent_120
+  examples: |
+    - the weather this weekend is supposed to be warm.
+- intent: faq/intent_121
+  examples: |
+    - will it be good beach weather?
+- intent: faq/intent_122
+  examples: |
+    - i think it will be.
+- intent: faq/intent_123
+  examples: |
+    - it wouldn't be good if it got cold this weekend.
+- intent: faq/intent_124
+  examples: |
+    - i want this trip to be perfect, i hope it stays warm.
+- intent: faq/intent_125
+  examples: |
+    - this california weather is so uncertain, it's impossible to know what'll happen.
+- intent: faq/intent_126
+  examples: |
+    - i know. every day the weather seems different.
+- intent: faq/intent_127
+  examples: |
+    - i would love it if it wasn't always so unpredictable.
+- intent: faq/intent_128
+  examples: |
+    - hello, may i speak to alice please?
+- intent: faq/intent_129
+  examples: |
+    - this is she. how's it going?
+- intent: faq/intent_130
+  examples: |
+    - i've been trying to call you all day.
+- intent: faq/intent_131
+  examples: |
+    - sorry about that. i was cleaning up.
+- intent: faq/intent_132
+  examples: |
+    - it's okay.
+- intent: faq/intent_133
+  examples: |
+    - so what were you calling me about?
+- intent: faq/intent_134
+  examples: |
+    - oh, i just wanted to see if you wanted to hang out tomorrow.
+- intent: faq/intent_135
+  examples: |
+    - sure, what did you want to do?
+- intent: faq/intent_136
+  examples: |
+    - maybe we can go see a movie or something.
+- intent: faq/intent_137
+  examples: |
+    - that sounds like fun. let's do it.
+- intent: faq/intent_138
+  examples: |
+    - i'll see you tomorrow then.
+- intent: faq/intent_139
+  examples: |
+    - hi, how are you. is alice there?
+- intent: faq/intent_140
+  examples: |
+    - speaking. what's up?
+- intent: faq/intent_141
+  examples: |
+    - why haven't you answered the phone?
+- intent: faq/intent_142
+  examples: |
+    - my bad, i had chores to do.
+- intent: faq/intent_143
+  examples: |
+    - that's all right.
+- intent: faq/intent_144
+  examples: |
+    - what was the reason for your call?
+- intent: faq/intent_145
+  examples: |
+    - i want to do something tomorrow with you.
+- intent: faq/intent_146
+  examples: |
+    - sounds good. what did you have in mind?
+- intent: faq/intent_147
+  examples: |
+    - i was thinking about seeing a movie.
+- intent: faq/intent_148
+  examples: |
+    - okay, let's go see a movie.
+- intent: faq/intent_149
+  examples: |
+    - until then.
+- intent: faq/intent_150
+  examples: |
+    - is alice available?
+- intent: faq/intent_151
+  examples: |
+    - you're talking to her.
+- intent: faq/intent_152
+  examples: |
+    - i've called you a hundred times today.
+- intent: faq/intent_153
+  examples: |
+    - i was busy doing something. i apologize.
+- intent: faq/intent_154
+  examples: |
+    - no problem.
+- intent: faq/intent_155
+  examples: |
+    - did you need something?
+- intent: faq/intent_156
+  examples: |
+    - do you want to do something tomorrow?
+- intent: faq/intent_157
+  examples: |
+    - is there somewhere special you wanted to go?
+- intent: faq/intent_158
+  examples: |
+    - how about a movie?
+- intent: faq/intent_159
+  examples: |
+    - a movie sounds good.
+- intent: faq/intent_160
+  examples: |
+    - have you seen the new girl in school?
+- intent: faq/intent_161
+  examples: |
+    - no, i haven't.
+- intent: faq/intent_162
+  examples: |
+    - she's really pretty.
+- intent: faq/intent_163
+  examples: |
+    - describe her to me.
+- intent: faq/intent_164
+  examples: |
+    - she's not too tall.
+- intent: faq/intent_165
+  examples: |
+    - well, how tall is she?
+- intent: faq/intent_166
+  examples: |
+    - she's about five feet even.
+- intent: faq/intent_167
+  examples: |
+    - what does she look like, though?
+- intent: faq/intent_168
+  examples: |
+    - she has pretty light brown eyes.
+- intent: faq/intent_169
+  examples: |
+    - i may know which girl you're talking about.
+- intent: faq/intent_170
+  examples: |
+    - so you have seen her around?
+- intent: faq/intent_171
+  examples: |
+    - there's a new girl in school, have you seen her yet?
+- intent: faq/intent_172
+  examples: |
+    - i haven't seen her yet.
+- intent: faq/intent_173
+  examples: |
+    - i think that she is very pretty.
+- intent: faq/intent_174
+  examples: |
+    - tell me how she looks.
+- intent: faq/intent_175
+  examples: |
+    - she's kind of short.
+- intent: faq/intent_176
+  examples: |
+    - what height is she?
+- intent: faq/intent_177
+  examples: |
+    - she's probably about five feet.
+- intent: faq/intent_178
+  examples: |
+    - that's nice, but tell me what she looks like.
+- intent: faq/intent_179
+  examples: |
+    - the first thing i noticed was her beautiful brown eyes.
+- intent: faq/intent_180
+  examples: |
+    - i think i might've bumped into her before.
+- intent: faq/intent_181
+  examples: |
+    - are you telling me that you've seen her before?
+- intent: faq/intent_182
+  examples: |
+    - have you met the new girl?
+- intent: faq/intent_183
+  examples: |
+    - no. have you?
+- intent: faq/intent_184
+  examples: |
+    - she's one of the prettiest girls at the school.
+- intent: faq/intent_185
+  examples: |
+    - what does she look like?
+- intent: faq/intent_186
+  examples: |
+    - well, she's quite short.
+- intent: faq/intent_187
+  examples: |
+    - how tall would you say that she is?
+- intent: faq/intent_188
+  examples: |
+    - i would say she's only five feet.
+- intent: faq/intent_189
+  examples: |
+    - what about her facial features?
+- intent: faq/intent_190
+  examples: |
+    - she has light brown eyes, absolutely beautiful.
+- intent: faq/intent_191
+  examples: |
+    - i think i know who you're talking about.
+- intent: faq/intent_192
+  examples: |
+    - why weren't you at school yesterday?
+- intent: faq/intent_193
+  examples: |
+    - i wasn't really feeling well.
+- intent: faq/intent_194
+  examples: |
+    - what was wrong with you?
+- intent: faq/intent_195
+  examples: |
+    - my stomach was upset.
+- intent: faq/intent_196
+  examples: |
+    - do you feel better now?
+- intent: faq/intent_197
+  examples: |
+    - i don't really feel too well yet.
+- intent: faq/intent_198
+  examples: |
+    - do you want anything to make you feel better?
+- intent: faq/intent_199
+  examples: |
+    - no, thanks. i already took some medicine.
+- intent: faq/intent_200
+  examples: |
+    - i hope you feel better.
+- intent: faq/intent_201
+  examples: |
+    - what reason do you have for missing school?
+- intent: faq/intent_202
+  examples: |
+    - i was sick.
+- intent: faq/intent_203
+  examples: |
+    - how were you sick?
+- intent: faq/intent_204
+  examples: |
+    - i had a stomachache.
+- intent: faq/intent_205
+  examples: |
+    - did it get any better?
+- intent: faq/intent_206
+  examples: |
+    - i'm still feeling under the weather.
+- intent: faq/intent_207
+  examples: |
+    - would you like anything for your stomach?
+- intent: faq/intent_208
+  examples: |
+    - i took something earlier.
+- intent: faq/intent_209
+  examples: |
+    - get better.
+- intent: faq/intent_210
+  examples: |
+    - why didn't you go to school yesterday?
+- intent: faq/intent_211
+  examples: |
+    - i stayed home because i wasn't feeling well.
+- intent: faq/intent_212
+  examples: |
+    - what was your problem?
+- intent: faq/intent_213
+  examples: |
+    - my stomach was bothering me.
+- intent: faq/intent_214
+  examples: |
+    - are you feeling any better?
+- intent: faq/intent_215
+  examples: |
+    - i'm still feeling a little sick.
+- intent: faq/intent_216
+  examples: |
+    - i'm going to the store, would you like any pepto bismol?
+- intent: faq/intent_217
+  examples: |
+    - that's okay.
+- intent: faq/intent_218
+  examples: |
+    - did you hear the good news?
+- intent: faq/intent_219
+  examples: |
+    - no, i haven't.
+- intent: faq/intent_220
+  examples: |
+    - i got a promotion at my job.
+- intent: faq/intent_221
+  examples: |
+    - did you really?
+- intent: faq/intent_222
+  examples: |
+    - seriously, i am so excited.
+- intent: faq/intent_223
+  examples: |
+    - well, congratulations.
+- intent: faq/intent_224
+  examples: |
+    - thank you.
+- intent: faq/intent_225
+  examples: |
+    - i'm so happy for you.
+- intent: faq/intent_226
+  examples: |
+    - really?
+- intent: faq/intent_227
+  examples: |
+    - yes. you really deserved this.
+- intent: faq/intent_228
+  examples: |
+    - you think so?
+- intent: faq/intent_229
+  examples: |
+    - have you heard my good news?
+- intent: faq/intent_230
+  examples: |
+    - you haven't told me anything yet.
+- intent: faq/intent_231
+  examples: |
+    - i got a promotion at work earlier this week.
+- intent: faq/intent_232
+  examples: |
+    - is that right?
+- intent: faq/intent_233
+  examples: |
+    - it's the truth. i am really happy.
+- intent: faq/intent_234
+  examples: |
+    - congratulations on your promotion.
+- intent: faq/intent_235
+  examples: |
+    - thank you very much.
+- intent: faq/intent_236
+  examples: |
+    - i am really excited for you.
+- intent: faq/intent_237
+  examples: |
+    - are you really?
+- intent: faq/intent_238
+  examples: |
+    - i'm serious. you deserved this promotion.
+- intent: faq/intent_239
+  examples: |
+    - is that what you really think?
+- intent: faq/intent_240
+  examples: |
+    - i haven't told you what happened yet, have i?
+- intent: faq/intent_241
+  examples: |
+    - i haven't heard anything.
+- intent: faq/intent_242
+  examples: |
+    - my boss offered me a promotion, and i took it.
+- intent: faq/intent_243
+  examples: |
+    - are you serious?
+- intent: faq/intent_244
+  examples: |
+    - yes, i am really excited.
+- intent: faq/intent_245
+  examples: |
+    - that's great. congratulations.
+- intent: faq/intent_246
+  examples: |
+    - i appreciate that.
+- intent: faq/intent_247
+  examples: |
+    - you have no idea how happy i am for you.
+- intent: faq/intent_248
+  examples: |
+    - 'you look really nice today. '
+- intent: faq/intent_249
+  examples: |
+    - thank you. i just got this outfit the other day.
+- intent: faq/intent_250
+  examples: |
+    - really, where did you get it?
+- intent: faq/intent_251
+  examples: |
+    - i got it from macy's.
+- intent: faq/intent_252
+  examples: |
+    - it's really nice.
+- intent: faq/intent_253
+  examples: |
+    - thanks again. you look nice today, too.
+- intent: faq/intent_254
+  examples: |
+    - thank you. i just got these shoes today.
+- intent: faq/intent_255
+  examples: |
+    - really? what kind of shoes are they?
+- intent: faq/intent_256
+  examples: |
+    - these are called all star chuck taylors.
+- intent: faq/intent_257
+  examples: |
+    - i really like those. how much did they cost?
+- intent: faq/intent_258
+  examples: |
+    - they were about forty dollars.
+- intent: faq/intent_259
+  examples: |
+    - i absolutely love what you're wearing today.
+- intent: faq/intent_260
+  examples: |
+    - you do? i just bought this outfit a couple days ago.
+- intent: faq/intent_261
+  examples: |
+    - seriously, it looks really nice on you. where did you buy it from?
+- intent: faq/intent_262
+  examples: |
+    - i bought it from the macy's at the santa anita mall.
+- intent: faq/intent_263
+  examples: |
+    - i really like that outfit.
+- intent: faq/intent_264
+  examples: |
+    - thanks. i think you look nice today, too.
+- intent: faq/intent_265
+  examples: |
+    - thank you. i just bought these new shoes earlier today.
+- intent: faq/intent_266
+  examples: |
+    - those are nice. what are they?
+- intent: faq/intent_267
+  examples: |
+    - these are some chucks.
+- intent: faq/intent_268
+  examples: |
+    - those are great. how much were they?
+- intent: faq/intent_269
+  examples: |
+    - i got them for forty.
+- intent: faq/intent_270
+  examples: |
+    - i think that you look very cute today.
+- intent: faq/intent_271
+  examples: |
+    - is that right? this is a brand new outfit.
+- intent: faq/intent_272
+  examples: |
+    - what store did you get it from?
+- intent: faq/intent_273
+  examples: |
+    - i went to macy's and picked it out.
+- intent: faq/intent_274
+  examples: |
+    - i love your outfit right now.
+- intent: faq/intent_275
+  examples: |
+    - well, i think you look nice today too.
+- intent: faq/intent_276
+  examples: |
+    - thanks. i found these new shoes earlier at the store.
+- intent: faq/intent_277
+  examples: |
+    - i think that those are some really nice shoes. what kind are they?
+- intent: faq/intent_278
+  examples: |
+    - these are chucks.
+- intent: faq/intent_279
+  examples: |
+    - your shoes look really nice. how much did you get them for?
+- intent: faq/intent_280
+  examples: |
+    - tell me, what do you enjoy doing in your spare time?
+- intent: faq/intent_281
+  examples: |
+    - i enjoy drawing and painting.
+- intent: faq/intent_282
+  examples: |
+    - you know how to draw and paint?
+- intent: faq/intent_283
+  examples: |
+    - yes, i do.
+- intent: faq/intent_284
+  examples: |
+    - when did you learn how to do that?
+- intent: faq/intent_285
+  examples: |
+    - i learned back in high school.
+- intent: faq/intent_286
+  examples: |
+    - oh, so you took an art class?
+- intent: faq/intent_287
+  examples: |
+    - yeah, i loved that class.
+- intent: faq/intent_288
+  examples: |
+    - i see that you're pretty talented.
+- intent: faq/intent_289
+  examples: |
+    - thank you very much.
+- intent: faq/intent_290
+  examples: |
+    - i wish i had a talent like that.
+- intent: faq/intent_291
+  examples: |
+    - what kinds of things do you like to do?
+- intent: faq/intent_292
+  examples: |
+    - i've always liked to draw and paint.
+- intent: faq/intent_293
+  examples: |
+    - i didn't know you knew how to draw and paint.
+- intent: faq/intent_294
+  examples: |
+    - i do it every once in a while.
+- intent: faq/intent_295
+  examples: |
+    - how long have you known how to do that?
+- intent: faq/intent_296
+  examples: |
+    - i first learned how to do it in high school.
+- intent: faq/intent_297
+  examples: |
+    - did you take some sort of art class or something?
+- intent: faq/intent_298
+  examples: |
+    - that was my favorite class.
+- intent: faq/intent_299
+  examples: |
+    - you have got to be talented.
+- intent: faq/intent_300
+  examples: |
+    - thanks.
+- intent: faq/intent_301
+  examples: |
+    - if only i was talented.
+- intent: faq/intent_302
+  examples: |
+    - are there any hobbies you do?
+- intent: faq/intent_303
+  examples: |
+    - when i have time, i sometimes draw and paint.
+- intent: faq/intent_304
+  examples: |
+    - oh, you actually do that?
+- intent: faq/intent_305
+  examples: |
+    - every so often, i do.
+- intent: faq/intent_306
+  examples: |
+    - did you always know how to draw and paint?
+- intent: faq/intent_307
+  examples: |
+    - i was taught in high school how to draw and paint.
+- intent: faq/intent_308
+  examples: |
+    - you had an art class?
+- intent: faq/intent_309
+  examples: |
+    - exactly, it was my favorite class.
+- intent: faq/intent_310
+  examples: |
+    - well, it's good that you're so talented.
+- intent: faq/intent_311
+  examples: |
+    - i appreciate that.
+- intent: faq/intent_312
+  examples: |
+    - what's your favorite movie?
+- intent: faq/intent_313
+  examples: |
+    - my favorite movie is superbad.
+- intent: faq/intent_314
+  examples: |
+    - oh, why is that?
+- intent: faq/intent_315
+  examples: |
+    - it's the funniest movie that i've ever seen.
+- intent: faq/intent_316
+  examples: |
+    - that's true. it is a very funny movie.
+- intent: faq/intent_317
+  examples: |
+    - "you've seen it before? "
+- intent: faq/intent_318
+  examples: |
+    - yes, i saw that movie the first day it came out in theaters.
+- intent: faq/intent_319
+  examples: |
+    - didn't you laugh through the whole movie? i did.
+- intent: faq/intent_320
+  examples: |
+    - me too. that movie brought tears to my eyes.
+- intent: faq/intent_321
+  examples: |
+    - mine too.
+- intent: faq/intent_322
+  examples: |
+    - i have it on dvd at my house if you want to come over and watch it.
+- intent: faq/intent_323
+  examples: |
+    - which movie is your favorite to watch?
+- intent: faq/intent_324
+  examples: |
+    - i have to say, my favorite movie is superbad.
+- intent: faq/intent_325
+  examples: |
+    - is that right? why?
+- intent: faq/intent_326
+  examples: |
+    - honestly, it is one of the funniest movies i've seen in a long time.
+- intent: faq/intent_327
+  examples: |
+    - you're right. that movie is hilarious.
+- intent: faq/intent_328
+  examples: |
+    - i didn't think you saw that movie.
+- intent: faq/intent_329
+  examples: |
+    - i went to see it the day it came out.
+- intent: faq/intent_330
+  examples: |
+    - i was laughing through the whole movie.
+- intent: faq/intent_331
+  examples: |
+    - "i couldn't help laughing, either. "
+- intent: faq/intent_332
+  examples: |
+    - same here.
+- intent: faq/intent_333
+  examples: |
+    - i bought the movie. would you like to come to my house and watch it?
+- intent: faq/intent_334
+  examples: |
+    - out of every movie that you've seen, which one is your favorite?
+- intent: faq/intent_335
+  examples: |
+    - i'm going to have to say that superbad is the best movie ever.
+- intent: faq/intent_336
+  examples: |
+    - you think so, how come?
+- intent: faq/intent_337
+  examples: |
+    - well, superbad is super funny.
+- intent: faq/intent_338
+  examples: |
+    - you're not lying, i found that movie absolutely hilarious.
+- intent: faq/intent_339
+  examples: |
+    - i didn't know that you saw superbad before.
+- intent: faq/intent_340
+  examples: |
+    - i made sure to be in line to see it the first day it came out.
+- intent: faq/intent_341
+  examples: |
+    - i couldn't keep from laughing throughout the whole movie.
+- intent: faq/intent_342
+  examples: |
+    - i was laughing hysterically the whole time; my stomach muscles hurt afterwards.
+- intent: faq/intent_343
+  examples: |
+    - that's exactly how i felt.
+- intent: faq/intent_344
+  examples: |
+    - what type of music do you like to listen to?
+- intent: faq/intent_345
+  examples: |
+    - i like listening to different kinds of music.
+- intent: faq/intent_346
+  examples: |
+    - like what, for instance?
+- intent: faq/intent_347
+  examples: |
+    - i enjoy rock and r&b.
+- intent: faq/intent_348
+  examples: |
+    - why is that?
+- intent: faq/intent_349
+  examples: |
+    - i like the different instruments that they use.
+- intent: faq/intent_350
+  examples: |
+    - that's a good reason to like something.
+- intent: faq/intent_351
+  examples: |
+    - what kind of music do you enjoy listening to?
+- intent: faq/intent_352
+  examples: |
+    - i enjoy listening to all kinds of music.
+- intent: faq/intent_353
+  examples: |
+    - what kind?
+- intent: faq/intent_354
+  examples: |
+    - i like to listen to rock and r&b.
+- intent: faq/intent_355
+  examples: |
+    - why do you like that type of music?
+- intent: faq/intent_356
+  examples: |
+    - i like the kinds of instruments that they use.
+- intent: faq/intent_357
+  examples: |
+    - i think that's an excellent reason to like something.
+- intent: faq/intent_358
+  examples: |
+    - what is your favorite kind of music?
+- intent: faq/intent_359
+  examples: |
+    - i listen to various types of music.
+- intent: faq/intent_360
+  examples: |
+    - what genres?
+- intent: faq/intent_361
+  examples: |
+    - i enjoy listening to both rock and r&b.
+- intent: faq/intent_362
+  examples: |
+    - what interests you in that type of music?
+- intent: faq/intent_363
+  examples: |
+    - i enjoy the different types of instruments that they use.
+- intent: faq/intent_364
+  examples: |
+    - did you go to the basketball game on friday?
+- intent: faq/intent_365
+  examples: |
+    - no, i couldn't make it.
+- intent: faq/intent_366
+  examples: |
+    - you missed a really good game.
+- intent: faq/intent_367
+  examples: |
+    - oh, really? who won?
+- intent: faq/intent_368
+  examples: |
+    - our school did. they played really well.
+- intent: faq/intent_369
+  examples: |
+    - too bad i was busy. i really wanted to go.
+- intent: faq/intent_370
+  examples: |
+    - yeah, you should have. it was really exciting.
+- intent: faq/intent_371
+  examples: |
+    - so what was the score?
+- intent: faq/intent_372
+  examples: |
+    - the score was 101-98.
+- intent: faq/intent_373
+  examples: |
+    - man, that was a really close game.
+- intent: faq/intent_374
+  examples: |
+    - that's what made it so great.
+- intent: faq/intent_375
+  examples: |
+    - were you able to attend friday night's basketball game?
+- intent: faq/intent_376
+  examples: |
+    - i was unable to make it.
+- intent: faq/intent_377
+  examples: |
+    - you should have been there. it was intense.
+- intent: faq/intent_378
+  examples: |
+    - is that right. who ended up winning?
+- intent: faq/intent_379
+  examples: |
+    - our team was victorious.
+- intent: faq/intent_380
+  examples: |
+    - i wish i was free that night. i'm kind of mad that i didn't go.
+- intent: faq/intent_381
+  examples: |
+    - it was a great game.
+- intent: faq/intent_382
+  examples: |
+    - what was the score at the end of the game?
+- intent: faq/intent_383
+  examples: |
+    - our team won 101-98.
+- intent: faq/intent_384
+  examples: |
+    - sounds like it was a close game.
+- intent: faq/intent_385
+  examples: |
+    - that's the reason it was such a great game.
+- intent: faq/intent_386
+  examples: |
+    - i was meaning to ask you if you saw the basketball game on friday.
+- intent: faq/intent_387
+  examples: |
+    - i wanted to go, but i couldn't.
+- intent: faq/intent_388
+  examples: |
+    - it was a great game.
+- intent: faq/intent_389
+  examples: |
+    - it's too bad that i couldn't make it. who won?
+- intent: faq/intent_390
+  examples: |
+    - our team played hard and won.
+- intent: faq/intent_391
+  examples: |
+    - i really wish i went to the game.
+- intent: faq/intent_392
+  examples: |
+    - it was the best game ever.
+- intent: faq/intent_393
+  examples: |
+    - so tell me the final score.
+- intent: faq/intent_394
+  examples: |
+    - 'the other team lost by three points, 101-98. '
+- intent: faq/intent_395
+  examples: |
+    - it must've been a close game.
+- intent: faq/intent_396
+  examples: |
+    - what are you doing this weekend?
+- intent: faq/intent_397
+  examples: |
+    - i'm going to the movies with a friend. how about you?
+- intent: faq/intent_398
+  examples: |
+    - i'm not sure yet.
+- intent: faq/intent_399
+  examples: |
+    - well, did you want to go see a movie with me?
+- intent: faq/intent_400
+  examples: |
+    - what movie are you going to see?
+- intent: faq/intent_401
+  examples: |
+    - i'm not sure yet. is there something you want to see?
+- intent: faq/intent_402
+  examples: |
+    - there's nothing i can think of.
+- intent: faq/intent_403
+  examples: |
+    - so, did you want to go?
+- intent: faq/intent_404
+  examples: |
+    - no, thanks, maybe another time.
+- intent: faq/intent_405
+  examples: |
+    - do you know what you're going to do this weekend?
+- intent: faq/intent_406
+  examples: |
+    - i am going to see a movie with a friend of mine. what about you?
+- intent: faq/intent_407
+  examples: |
+    - i don't know.
+- intent: faq/intent_408
+  examples: |
+    - would you like to see a movie with me and my friend?
+- intent: faq/intent_409
+  examples: |
+    - do you know what movie you're going to watch?
+- intent: faq/intent_410
+  examples: |
+    - i don't know, but was there a certain movie you wanted to see?
+- intent: faq/intent_411
+  examples: |
+    - none that i can think of.
+- intent: faq/intent_412
+  examples: |
+    - well, would you like to go?
+- intent: faq/intent_413
+  examples: |
+    - thank you for inviting me, but i think i'll pass.
+- intent: faq/intent_414
+  examples: |
+    - you have any ideas as to what you want to do this weekend?
+- intent: faq/intent_415
+  examples: |
+    - i'm going to the movie theater with my friend. what are you going to do?
+- intent: faq/intent_416
+  examples: |
+    - i'm not quite sure yet.
+- intent: faq/intent_417
+  examples: |
+    - how about you see a movie with me and my friend?
+- intent: faq/intent_418
+  examples: |
+    - what movie are you and your friend planning on watching?
+- intent: faq/intent_419
+  examples: |
+    - not sure. is there a movie out that catches your eye?
+- intent: faq/intent_420
+  examples: |
+    - no good movies come to mind.
+- intent: faq/intent_421
+  examples: |
+    - have you decided whether or not you would like to go?
+- intent: faq/intent_422
+  examples: |
+    - did you go to school today?
+- intent: faq/intent_423
+  examples: |
+    - yeah, i went to school today. were you there?
+- intent: faq/intent_424
+  examples: |
+    - no, i didn't go, i've been sick.
+- intent: faq/intent_425
+  examples: |
+    - that sucks. did you want the assignments from english class?
+- intent: faq/intent_426
+  examples: |
+    - that would be nice, thank you.
+- intent: faq/intent_427
+  examples: |
+    - no problem, you're welcome.
+- intent: faq/intent_428
+  examples: |
+    - i will be glad to do the same for you when you're sick.
+- intent: faq/intent_429
+  examples: |
+    - have you attended school today?
+- intent: faq/intent_430
+  examples: |
+    - i attended school today. did you?
+- intent: faq/intent_431
+  examples: |
+    - i wasn't able to attend school because i was feeling ill.
+- intent: faq/intent_432
+  examples: |
+    - i'm sorry to hear that. would you like the assignments from english class?
+- intent: faq/intent_433
+  examples: |
+    - i would really appreciate that, thanks.
+- intent: faq/intent_434
+  examples: |
+    - it's no trouble at all.
+- intent: faq/intent_435
+  examples: |
+    - if you get sick, i'll return the favor.
+- intent: faq/intent_436
+  examples: |
+    - have you gone to school today?
+- intent: faq/intent_437
+  examples: |
+    - i went to school today. did you go to school?
+- intent: faq/intent_438
+  examples: |
+    - i couldn't go to school today, i was sick.
+- intent: faq/intent_439
+  examples: |
+    - that's horrible. i'd be happy to give you the assignments from english class.
+- intent: faq/intent_440
+  examples: |
+    - thank you very much, that's kind of you.
+- intent: faq/intent_441
+  examples: |
+    - don't mention it.
+- intent: faq/intent_442
+  examples: |
+    - did you hear the news?
+- intent: faq/intent_443
+  examples: |
+    - what happened?
+- intent: faq/intent_444
+  examples: |
+    - our cousin went into labor and had her baby last week.
+- intent: faq/intent_445
+  examples: |
+    - she did? why didn't anyone tell me?
+- intent: faq/intent_446
+  examples: |
+    - i would've thought that somebody would have told you.
+- intent: faq/intent_447
+  examples: |
+    - no, i had no idea.
+- intent: faq/intent_448
+  examples: |
+    - well, she did, her baby was 8 pounds 6 ounces.
+- intent: faq/intent_449
+  examples: |
+    - oh my god, that's great!
+- intent: faq/intent_450
+  examples: |
+    - are you going to go and visit her and the baby?
+- intent: faq/intent_451
+  examples: |
+    - i think that i might.
+- intent: faq/intent_452
+  examples: |
+    - good! i just thought i'd let you know.
+- intent: faq/intent_453
+  examples: |
+    - have you heard what happened?
+- intent: faq/intent_454
+  examples: |
+    - heard what?
+- intent: faq/intent_455
+  examples: |
+    - debrah already had her baby.
+- intent: faq/intent_456
+  examples: |
+    - i didn't know that.
+- intent: faq/intent_457
+  examples: |
+    - i thought you knew.
+- intent: faq/intent_458
+  examples: |
+    - i honestly didn't know.
+- intent: faq/intent_459
+  examples: |
+    - the baby was 8 pounds 6 ounces.
+- intent: faq/intent_460
+  examples: |
+    - that's good to hear.
+- intent: faq/intent_461
+  examples: |
+    - will you go and visit them?
+- intent: faq/intent_462
+  examples: |
+    - of course i will.
+- intent: faq/intent_463
+  examples: |
+    - i just wanted to give you the good news.
+- intent: faq/intent_464
+  examples: |
+    - have you heard the news?
+- intent: faq/intent_465
+  examples: |
+    - i haven't heard anything.
+- intent: faq/intent_466
+  examples: |
+    - debrah had her baby last week.
+- intent: faq/intent_467
+  examples: |
+    - nobody told me.
+- intent: faq/intent_468
+  examples: |
+    - i thought you heard.
+- intent: faq/intent_469
+  examples: |
+    - i really wasn't told anything.
+- intent: faq/intent_470
+  examples: |
+    - she was a cute 8 pounds 6 ounces.
+- intent: faq/intent_471
+  examples: |
+    - wow, how exciting.
+- intent: faq/intent_472
+  examples: |
+    - i know, you should really go and see her and the baby.
+- intent: faq/intent_473
+  examples: |
+    - of course i will.
+- intent: faq/intent_474
+  examples: |
+    - did you go to school today?
+- intent: faq/intent_475
+  examples: |
+    - of course. did you?
+- intent: faq/intent_476
+  examples: |
+    - i didn't want to, so i didn't.
+- intent: faq/intent_477
+  examples: |
+    - that's sad, but have you gone to the movies recently?
+- intent: faq/intent_478
+  examples: |
+    - that's a switch.
+- intent: faq/intent_479
+  examples: |
+    - i'm serious, have you?
+- intent: faq/intent_480
+  examples: |
+    - no, i haven't. why?
+- intent: faq/intent_481
+  examples: |
+    - i really want to go to the movies this weekend.
+- intent: faq/intent_482
+  examples: |
+    - so go then.
+- intent: faq/intent_483
+  examples: |
+    - i really don't want to go by myself.
+- intent: faq/intent_484
+  examples: |
+    - well anyway, do you plan on going to school tomorrow?
+- intent: faq/intent_485
+  examples: |
+    - did you make it to school today?
+- intent: faq/intent_486
+  examples: |
+    - i always do. did you go to school today?
+- intent: faq/intent_487
+  examples: |
+    - no, i didn't.
+- intent: faq/intent_488
+  examples: |
+    - you should have, but have you seen any movies lately?
+- intent: faq/intent_489
+  examples: |
+    - that was an odd change of subject.
+- intent: faq/intent_490
+  examples: |
+    - maybe it was, but answer the question.
+- intent: faq/intent_491
+  examples: |
+    - no, not recently.
+- intent: faq/intent_492
+  examples: |
+    - i want to go to see a movie this weekend.
+- intent: faq/intent_493
+  examples: |
+    - what's stopping you then?
+- intent: faq/intent_494
+  examples: |
+    - i don't want to go alone.
+- intent: faq/intent_495
+  examples: |
+    - so, will you be at school tomorrow?
+- intent: faq/intent_496
+  examples: |
+    - did you even bother to go to school today?
+- intent: faq/intent_497
+  examples: |
+    - yeah, i went. did you go?
+- intent: faq/intent_498
+  examples: |
+    - no, i didn't feel like it.
+- intent: faq/intent_499
+  examples: |
+    - that's nice, have you been to the movies lately?
+- intent: faq/intent_500
+  examples: |
+    - no, but that was a random change of subject.

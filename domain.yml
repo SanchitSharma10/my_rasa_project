@@ -1,0 +1,1039 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - faq
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_faq/intent_0:
+  - text: i'm fine. how about yourself?
+  utter_faq/intent_1:
+  - text: i'm pretty good. thanks for asking.
+  utter_faq/intent_2:
+  - text: no problem. so how have you been?
+  utter_faq/intent_3:
+  - text: i've been great. what about you?
+  utter_faq/intent_4:
+  - text: i've been good. i'm in school right now.
+  utter_faq/intent_5:
+  - text: what school do you go to?
+  utter_faq/intent_6:
+  - text: i go to pcc.
+  utter_faq/intent_7:
+  - text: do you like it there?
+  utter_faq/intent_8:
+  - text: it's okay. it's a really big campus.
+  utter_faq/intent_9:
+  - text: good luck with school.
+  utter_faq/intent_10:
+  - text: thank you very much.
+  utter_faq/intent_11:
+  - text: i'm doing well. how about you?
+  utter_faq/intent_12:
+  - text: never better, thanks.
+  utter_faq/intent_13:
+  - text: so how have you been lately?
+  utter_faq/intent_14:
+  - text: i've actually been pretty good. you?
+  utter_faq/intent_15:
+  - text: i'm actually in school right now.
+  utter_faq/intent_16:
+  - text: which school do you attend?
+  utter_faq/intent_17:
+  - text: i'm attending pcc right now.
+  utter_faq/intent_18:
+  - text: are you enjoying it there?
+  utter_faq/intent_19:
+  - text: it's not bad. there are a lot of people there.
+  utter_faq/intent_20:
+  - text: good luck with that.
+  utter_faq/intent_21:
+  - text: thanks.
+  utter_faq/intent_22:
+  - text: i'm doing great. what about you?
+  utter_faq/intent_23:
+  - text: i'm absolutely lovely, thank you.
+  utter_faq/intent_24:
+  - text: everything's been good with you?
+  utter_faq/intent_25:
+  - text: i haven't been better. how about yourself?
+  utter_faq/intent_26:
+  - text: i started school recently.
+  utter_faq/intent_27:
+  - text: where are you going to school?
+  utter_faq/intent_28:
+  - text: i'm going to pcc.
+  utter_faq/intent_29:
+  - text: how do you like it so far?
+  utter_faq/intent_30:
+  - text: i like it so far. my classes are pretty good right now.
+  utter_faq/intent_31:
+  - text: i wish you luck.
+  utter_faq/intent_32:
+  - text: i know. i think it may rain.
+  utter_faq/intent_33:
+  - text: it's the middle of summer, it shouldn't rain today.
+  utter_faq/intent_34:
+  - text: that would be weird.
+  utter_faq/intent_35:
+  - text: yeah, especially since it's ninety degrees outside.
+  utter_faq/intent_36:
+  - text: i know, it would be horrible if it rained and it was hot outside.
+  utter_faq/intent_37:
+  - text: yes, it would be.
+  utter_faq/intent_38:
+  - text: i really wish it wasn't so hot every day.
+  utter_faq/intent_39:
+  - text: me too. i can't wait until winter.
+  utter_faq/intent_40:
+  - text: i like winter too, but sometimes it gets too cold.
+  utter_faq/intent_41:
+  - text: i'd rather be cold than hot.
+  utter_faq/intent_42:
+  - text: me too.
+  utter_faq/intent_43:
+  - text: you're right. i think it's going to rain later.
+  utter_faq/intent_44:
+  - text: in the middle of the summer, it shouldn't be raining.
+  utter_faq/intent_45:
+  - text: that wouldn't seem right.
+  utter_faq/intent_46:
+  - text: considering that it's over ninety degrees outside, that would be weird.
+  utter_faq/intent_47:
+  - text: exactly, it wouldn't be nice if it started raining. it's too hot.
+  utter_faq/intent_48:
+  - text: i know, you're absolutely right.
+  utter_faq/intent_49:
+  - text: i wish it would cool off one day.
+  utter_faq/intent_50:
+  - text: that's how i feel, i want winter to come soon.
+  utter_faq/intent_51:
+  - text: i enjoy the winter, but it gets really cold sometimes.
+  utter_faq/intent_52:
+  - text: i know what you mean, but i'd rather be cold than hot.
+  utter_faq/intent_53:
+  - text: that's exactly how i feel.
+  utter_faq/intent_54:
+  - text: that is true. i hope it doesn't rain.
+  utter_faq/intent_55:
+  - text: it wouldn't rain in the middle of the summer.
+  utter_faq/intent_56:
+  - text: it wouldn't seem right if it started raining right now.
+  utter_faq/intent_57:
+  - text: it would be weird if it started raining in ninety degree weather.
+  utter_faq/intent_58:
+  - text: any rain right now would be pointless.
+  utter_faq/intent_59:
+  - text: that's right, it really would be.
+  utter_faq/intent_60:
+  - text: i want it to cool down some.
+  utter_faq/intent_61:
+  - text: i know what you mean, i can't wait until it's winter.
+  utter_faq/intent_62:
+  - text: winter is great. i wish it didn't get so cold sometimes though.
+  utter_faq/intent_63:
+  - text: i would rather deal with the winter than the summer.
+  utter_faq/intent_64:
+  - text: yes, it is.
+  utter_faq/intent_65:
+  - text: it looks like it may rain soon.
+  utter_faq/intent_66:
+  - text: yes, and i hope that it does.
+  utter_faq/intent_67:
+  - text: why is that?
+  utter_faq/intent_68:
+  - text: i really love how rain clears the air.
+  utter_faq/intent_69:
+  - text: me too. it always smells so fresh after it rains.
+  utter_faq/intent_70:
+  - text: yes, but i love the night air after it rains.
+  utter_faq/intent_71:
+  - text: really? why is it?
+  utter_faq/intent_72:
+  - text: because you can see the stars perfectly.
+  utter_faq/intent_73:
+  - text: i really hope it rains today.
+  utter_faq/intent_74:
+  - text: yeah, me too.
+  utter_faq/intent_75:
+  - text: it really is.
+  utter_faq/intent_76:
+  - text: it seems that it may rain today.
+  utter_faq/intent_77:
+  - text: hopefully it will.
+  utter_faq/intent_78:
+  - text: how come?
+  utter_faq/intent_79:
+  - text: i like how clear the sky gets after it rains.
+  utter_faq/intent_80:
+  - text: i feel the same way. it smells so good after it rains.
+  utter_faq/intent_81:
+  - text: i especially love the night air when it rains.
+  utter_faq/intent_82:
+  - text: really? why?
+  utter_faq/intent_83:
+  - text: the stars look so much closer after it rains.
+  utter_faq/intent_84:
+  - text: i really want it to rain today.
+  utter_faq/intent_85:
+  - text: yeah, so do i.
+  utter_faq/intent_86:
+  - text: yes, i think so too.
+  utter_faq/intent_87:
+  - text: i think that it's going to rain.
+  utter_faq/intent_88:
+  - text: i hope that it does rain.
+  utter_faq/intent_89:
+  - text: you like the rain?
+  utter_faq/intent_90:
+  - text: the sky looks so clean after it rains. i love it.
+  utter_faq/intent_91:
+  - text: i understand. rain does make it smell cleaner.
+  utter_faq/intent_92:
+  - text: i love most how it is at night after it rains.
+  utter_faq/intent_93:
+  - text: how come?
+  utter_faq/intent_94:
+  - text: you can see the stars so much more clearly after it rains.
+  utter_faq/intent_95:
+  - text: i would love for it to rain today.
+  utter_faq/intent_96:
+  - text: that sounds like fun. what's the weather going to be like?
+  utter_faq/intent_97:
+  - text: i heard that it's going to be warm this weekend.
+  utter_faq/intent_98:
+  - text: is it going to be perfect beach weather?
+  utter_faq/intent_99:
+  - text: i believe so.
+  utter_faq/intent_100:
+  - text: good. i hope it doesn't cool off this weekend.
+  utter_faq/intent_101:
+  - text: i know. i really want to go to the beach.
+  utter_faq/intent_102:
+  - text: but you know that california weather is really unpredictable.
+  utter_faq/intent_103:
+  - text: you're right. one minute it's hot, and then the next minute it's cold.
+  utter_faq/intent_104:
+  - text: i really wish the weather would just stay the same.
+  utter_faq/intent_105:
+  - text: i do too. that way we can have our activities planned ahead of time.
+  utter_faq/intent_106:
+  - text: yeah, that would make things a lot easier.
+  utter_faq/intent_107:
+  - text: a trip to the beach would be fun. how is the weather going to be?
+  utter_faq/intent_108:
+  - text: the forecast says that it will be warm on the weekend.
+  utter_faq/intent_109:
+  - text: so do you think it'll be perfect weather for the beach?
+  utter_faq/intent_110:
+  - text: it sounds like it will be.
+  utter_faq/intent_111:
+  - text: i really hope it doesn't get cold.
+  utter_faq/intent_112:
+  - text: that would ruin things, i want to go so badly.
+  utter_faq/intent_113:
+  - text: the weather in california is unpredictable, so you never know.
+  utter_faq/intent_114:
+  - text: that is true. the weather is constantly changing.
+  utter_faq/intent_115:
+  - text: it would be nice if the weather would never change.
+  utter_faq/intent_116:
+  - text: that would be great, then we could plan things sooner.
+  utter_faq/intent_117:
+  - text: true. predictable weather would make life easier.
+  utter_faq/intent_118:
+  - text: what's the weather going to be like? i may want to go too.
+  utter_faq/intent_119:
+  - text: the weather this weekend is supposed to be warm.
+  utter_faq/intent_120:
+  - text: will it be good beach weather?
+  utter_faq/intent_121:
+  - text: i think it will be.
+  utter_faq/intent_122:
+  - text: it wouldn't be good if it got cold this weekend.
+  utter_faq/intent_123:
+  - text: i want this trip to be perfect, i hope it stays warm.
+  utter_faq/intent_124:
+  - text: this california weather is so uncertain, it's impossible to know what'll
+      happen.
+  utter_faq/intent_125:
+  - text: i know. every day the weather seems different.
+  utter_faq/intent_126:
+  - text: i would love it if it wasn't always so unpredictable.
+  utter_faq/intent_127:
+  - text: that would make it easier for us to make plans.
+  utter_faq/intent_128:
+  - text: this is she. how's it going?
+  utter_faq/intent_129:
+  - text: i've been trying to call you all day.
+  utter_faq/intent_130:
+  - text: sorry about that. i was cleaning up.
+  utter_faq/intent_131:
+  - text: it's okay.
+  utter_faq/intent_132:
+  - text: so what were you calling me about?
+  utter_faq/intent_133:
+  - text: oh, i just wanted to see if you wanted to hang out tomorrow.
+  utter_faq/intent_134:
+  - text: sure, what did you want to do?
+  utter_faq/intent_135:
+  - text: maybe we can go see a movie or something.
+  utter_faq/intent_136:
+  - text: that sounds like fun. let's do it.
+  utter_faq/intent_137:
+  - text: i'll see you tomorrow then.
+  utter_faq/intent_138:
+  - text: see you then. goodbye.
+  utter_faq/intent_139:
+  - text: speaking. what's up?
+  utter_faq/intent_140:
+  - text: why haven't you answered the phone?
+  utter_faq/intent_141:
+  - text: my bad, i had chores to do.
+  utter_faq/intent_142:
+  - text: that's all right.
+  utter_faq/intent_143:
+  - text: what was the reason for your call?
+  utter_faq/intent_144:
+  - text: i want to do something tomorrow with you.
+  utter_faq/intent_145:
+  - text: sounds good. what did you have in mind?
+  utter_faq/intent_146:
+  - text: i was thinking about seeing a movie.
+  utter_faq/intent_147:
+  - text: okay, let's go see a movie.
+  utter_faq/intent_148:
+  - text: until then.
+  utter_faq/intent_149:
+  - text: talk to you later.
+  utter_faq/intent_150:
+  - text: you're talking to her.
+  utter_faq/intent_151:
+  - text: i've called you a hundred times today.
+  utter_faq/intent_152:
+  - text: i was busy doing something. i apologize.
+  utter_faq/intent_153:
+  - text: no problem.
+  utter_faq/intent_154:
+  - text: did you need something?
+  utter_faq/intent_155:
+  - text: do you want to do something tomorrow?
+  utter_faq/intent_156:
+  - text: is there somewhere special you wanted to go?
+  utter_faq/intent_157:
+  - text: how about a movie?
+  utter_faq/intent_158:
+  - text: a movie sounds good.
+  utter_faq/intent_159:
+  - text: call me tomorrow then.
+  utter_faq/intent_160:
+  - text: no, i haven't.
+  utter_faq/intent_161:
+  - text: she's really pretty.
+  utter_faq/intent_162:
+  - text: describe her to me.
+  utter_faq/intent_163:
+  - text: she's not too tall.
+  utter_faq/intent_164:
+  - text: well, how tall is she?
+  utter_faq/intent_165:
+  - text: she's about five feet even.
+  utter_faq/intent_166:
+  - text: what does she look like, though?
+  utter_faq/intent_167:
+  - text: she has pretty light brown eyes.
+  utter_faq/intent_168:
+  - text: i may know which girl you're talking about.
+  utter_faq/intent_169:
+  - text: so you have seen her around?
+  utter_faq/intent_170:
+  - text: yes, i have.
+  utter_faq/intent_171:
+  - text: i haven't seen her yet.
+  utter_faq/intent_172:
+  - text: i think that she is very pretty.
+  utter_faq/intent_173:
+  - text: tell me how she looks.
+  utter_faq/intent_174:
+  - text: she's kind of short.
+  utter_faq/intent_175:
+  - text: what height is she?
+  utter_faq/intent_176:
+  - text: she's probably about five feet.
+  utter_faq/intent_177:
+  - text: that's nice, but tell me what she looks like.
+  utter_faq/intent_178:
+  - text: the first thing i noticed was her beautiful brown eyes.
+  utter_faq/intent_179:
+  - text: i think i might've bumped into her before.
+  utter_faq/intent_180:
+  - text: are you telling me that you've seen her before?
+  utter_faq/intent_181:
+  - text: i believe so.
+  utter_faq/intent_182:
+  - text: no. have you?
+  utter_faq/intent_183:
+  - text: she's one of the prettiest girls at the school.
+  utter_faq/intent_184:
+  - text: what does she look like?
+  utter_faq/intent_185:
+  - text: well, she's quite short.
+  utter_faq/intent_186:
+  - text: how tall would you say that she is?
+  utter_faq/intent_187:
+  - text: i would say she's only five feet.
+  utter_faq/intent_188:
+  - text: what about her facial features?
+  utter_faq/intent_189:
+  - text: she has light brown eyes, absolutely beautiful.
+  utter_faq/intent_190:
+  - text: i think i know who you're talking about.
+  utter_faq/intent_191:
+  - text: have you seen her?
+  utter_faq/intent_192:
+  - text: i wasn't really feeling well.
+  utter_faq/intent_193:
+  - text: what was wrong with you?
+  utter_faq/intent_194:
+  - text: my stomach was upset.
+  utter_faq/intent_195:
+  - text: do you feel better now?
+  utter_faq/intent_196:
+  - text: i don't really feel too well yet.
+  utter_faq/intent_197:
+  - text: do you want anything to make you feel better?
+  utter_faq/intent_198:
+  - text: no, thanks. i already took some medicine.
+  utter_faq/intent_199:
+  - text: i hope you feel better.
+  utter_faq/intent_200:
+  - text: thank you.
+  utter_faq/intent_201:
+  - text: i was sick.
+  utter_faq/intent_202:
+  - text: how were you sick?
+  utter_faq/intent_203:
+  - text: i had a stomachache.
+  utter_faq/intent_204:
+  - text: did it get any better?
+  utter_faq/intent_205:
+  - text: i'm still feeling under the weather.
+  utter_faq/intent_206:
+  - text: would you like anything for your stomach?
+  utter_faq/intent_207:
+  - text: i took something earlier.
+  utter_faq/intent_208:
+  - text: get better.
+  utter_faq/intent_209:
+  - text: thanks a lot.
+  utter_faq/intent_210:
+  - text: i stayed home because i wasn't feeling well.
+  utter_faq/intent_211:
+  - text: what was your problem?
+  utter_faq/intent_212:
+  - text: my stomach was bothering me.
+  utter_faq/intent_213:
+  - text: are you feeling any better?
+  utter_faq/intent_214:
+  - text: i'm still feeling a little sick.
+  utter_faq/intent_215:
+  - text: i'm going to the store, would you like any pepto bismol?
+  utter_faq/intent_216:
+  - text: that's okay.
+  utter_faq/intent_217:
+  - text: i hope you feel better.
+  utter_faq/intent_218:
+  - text: no, i haven't.
+  utter_faq/intent_219:
+  - text: i got a promotion at my job.
+  utter_faq/intent_220:
+  - text: did you really?
+  utter_faq/intent_221:
+  - text: seriously, i am so excited.
+  utter_faq/intent_222:
+  - text: well, congratulations.
+  utter_faq/intent_223:
+  - text: thank you.
+  utter_faq/intent_224:
+  - text: i'm so happy for you.
+  utter_faq/intent_225:
+  - text: really?
+  utter_faq/intent_226:
+  - text: yes. you really deserved this.
+  utter_faq/intent_227:
+  - text: you think so?
+  utter_faq/intent_228:
+  - text: yes. good for you.
+  utter_faq/intent_229:
+  - text: you haven't told me anything yet.
+  utter_faq/intent_230:
+  - text: i got a promotion at work earlier this week.
+  utter_faq/intent_231:
+  - text: is that right?
+  utter_faq/intent_232:
+  - text: it's the truth. i am really happy.
+  utter_faq/intent_233:
+  - text: congratulations on your promotion.
+  utter_faq/intent_234:
+  - text: thank you very much.
+  utter_faq/intent_235:
+  - text: i am really excited for you.
+  utter_faq/intent_236:
+  - text: are you really?
+  utter_faq/intent_237:
+  - text: i'm serious. you deserved this promotion.
+  utter_faq/intent_238:
+  - text: is that what you really think?
+  utter_faq/intent_239:
+  - text: yes, i do.
+  utter_faq/intent_240:
+  - text: i haven't heard anything.
+  utter_faq/intent_241:
+  - text: my boss offered me a promotion, and i took it.
+  utter_faq/intent_242:
+  - text: are you serious?
+  utter_faq/intent_243:
+  - text: yes, i am really excited.
+  utter_faq/intent_244:
+  - text: that's great. congratulations.
+  utter_faq/intent_245:
+  - text: i appreciate that.
+  utter_faq/intent_246:
+  - text: you have no idea how happy i am for you.
+  utter_faq/intent_247:
+  - text: for real?
+  utter_faq/intent_248:
+  - text: thank you. i just got this outfit the other day.
+  utter_faq/intent_249:
+  - text: really, where did you get it?
+  utter_faq/intent_250:
+  - text: i got it from macy's.
+  utter_faq/intent_251:
+  - text: it's really nice.
+  utter_faq/intent_252:
+  - text: thanks again. you look nice today, too.
+  utter_faq/intent_253:
+  - text: thank you. i just got these shoes today.
+  utter_faq/intent_254:
+  - text: really? what kind of shoes are they?
+  utter_faq/intent_255:
+  - text: these are called all star chuck taylors.
+  utter_faq/intent_256:
+  - text: i really like those. how much did they cost?
+  utter_faq/intent_257:
+  - text: they were about forty dollars.
+  utter_faq/intent_258:
+  - text: i think i'm going to go buy myself a pair.
+  utter_faq/intent_259:
+  - text: you do? i just bought this outfit a couple days ago.
+  utter_faq/intent_260:
+  - text: seriously, it looks really nice on you. where did you buy it from?
+  utter_faq/intent_261:
+  - text: i bought it from the macy's at the santa anita mall.
+  utter_faq/intent_262:
+  - text: i really like that outfit.
+  utter_faq/intent_263:
+  - text: thanks. i think you look nice today, too.
+  utter_faq/intent_264:
+  - text: thank you. i just bought these new shoes earlier today.
+  utter_faq/intent_265:
+  - text: those are nice. what are they?
+  utter_faq/intent_266:
+  - text: these are some chucks.
+  utter_faq/intent_267:
+  - text: those are great. how much were they?
+  utter_faq/intent_268:
+  - text: i got them for forty.
+  utter_faq/intent_269:
+  - text: i think i might go and find me my own pair of chucks.
+  utter_faq/intent_270:
+  - text: is that right? this is a brand new outfit.
+  utter_faq/intent_271:
+  - text: what store did you get it from?
+  utter_faq/intent_272:
+  - text: i went to macy's and picked it out.
+  utter_faq/intent_273:
+  - text: i love your outfit right now.
+  utter_faq/intent_274:
+  - text: well, i think you look nice today too.
+  utter_faq/intent_275:
+  - text: thanks. i found these new shoes earlier at the store.
+  utter_faq/intent_276:
+  - text: i think that those are some really nice shoes. what kind are they?
+  utter_faq/intent_277:
+  - text: these are chucks.
+  utter_faq/intent_278:
+  - text: your shoes look really nice. how much did you get them for?
+  utter_faq/intent_279:
+  - text: they only cost me about forty dollars.
+  utter_faq/intent_280:
+  - text: i enjoy drawing and painting.
+  utter_faq/intent_281:
+  - text: you know how to draw and paint?
+  utter_faq/intent_282:
+  - text: yes, i do.
+  utter_faq/intent_283:
+  - text: when did you learn how to do that?
+  utter_faq/intent_284:
+  - text: i learned back in high school.
+  utter_faq/intent_285:
+  - text: oh, so you took an art class?
+  utter_faq/intent_286:
+  - text: yeah, i loved that class.
+  utter_faq/intent_287:
+  - text: i see that you're pretty talented.
+  utter_faq/intent_288:
+  - text: thank you very much.
+  utter_faq/intent_289:
+  - text: i wish i had a talent like that.
+  utter_faq/intent_290:
+  - text: i'm sure you have a talent. it's just hidden.
+  utter_faq/intent_291:
+  - text: i've always liked to draw and paint.
+  utter_faq/intent_292:
+  - text: i didn't know you knew how to draw and paint.
+  utter_faq/intent_293:
+  - text: i do it every once in a while.
+  utter_faq/intent_294:
+  - text: how long have you known how to do that?
+  utter_faq/intent_295:
+  - text: i first learned how to do it in high school.
+  utter_faq/intent_296:
+  - text: did you take some sort of art class or something?
+  utter_faq/intent_297:
+  - text: that was my favorite class.
+  utter_faq/intent_298:
+  - text: you have got to be talented.
+  utter_faq/intent_299:
+  - text: thanks.
+  utter_faq/intent_300:
+  - text: if only i was talented.
+  utter_faq/intent_301:
+  - text: you have a talent. you just don't know what it is yet.
+  utter_faq/intent_302:
+  - text: when i have time, i sometimes draw and paint.
+  utter_faq/intent_303:
+  - text: oh, you actually do that?
+  utter_faq/intent_304:
+  - text: every so often, i do.
+  utter_faq/intent_305:
+  - text: did you always know how to draw and paint?
+  utter_faq/intent_306:
+  - text: i was taught in high school how to draw and paint.
+  utter_faq/intent_307:
+  - text: you had an art class?
+  utter_faq/intent_308:
+  - text: exactly, it was my favorite class.
+  utter_faq/intent_309:
+  - text: well, it's good that you're so talented.
+  utter_faq/intent_310:
+  - text: i appreciate that.
+  utter_faq/intent_311:
+  - text: talent is a great thing, i wish i had one.
+  utter_faq/intent_312:
+  - text: my favorite movie is superbad.
+  utter_faq/intent_313:
+  - text: oh, why is that?
+  utter_faq/intent_314:
+  - text: it's the funniest movie that i've ever seen.
+  utter_faq/intent_315:
+  - text: that's true. it is a very funny movie.
+  utter_faq/intent_316:
+  - text: "you've seen it before? "
+  utter_faq/intent_317:
+  - text: yes, i saw that movie the first day it came out in theaters.
+  utter_faq/intent_318:
+  - text: didn't you laugh through the whole movie? i did.
+  utter_faq/intent_319:
+  - text: me too. that movie brought tears to my eyes.
+  utter_faq/intent_320:
+  - text: mine too.
+  utter_faq/intent_321:
+  - text: i have it on dvd at my house if you want to come over and watch it.
+  utter_faq/intent_322:
+  - text: sure, let's go.
+  utter_faq/intent_323:
+  - text: i have to say, my favorite movie is superbad.
+  utter_faq/intent_324:
+  - text: is that right? why?
+  utter_faq/intent_325:
+  - text: honestly, it is one of the funniest movies i've seen in a long time.
+  utter_faq/intent_326:
+  - text: you're right. that movie is hilarious.
+  utter_faq/intent_327:
+  - text: i didn't think you saw that movie.
+  utter_faq/intent_328:
+  - text: i went to see it the day it came out.
+  utter_faq/intent_329:
+  - text: i was laughing through the whole movie.
+  utter_faq/intent_330:
+  - text: i couldn't help laughing, either.
+  utter_faq/intent_331:
+  - text: same here.
+  utter_faq/intent_332:
+  - text: i bought the movie. would you like to come to my house and watch it?
+  utter_faq/intent_333:
+  - text: of course.
+  utter_faq/intent_334:
+  - text: i'm going to have to say that superbad is the best movie ever.
+  utter_faq/intent_335:
+  - text: you think so, how come?
+  utter_faq/intent_336:
+  - text: well, superbad is super funny.
+  utter_faq/intent_337:
+  - text: you're not lying, i found that movie absolutely hilarious.
+  utter_faq/intent_338:
+  - text: i didn't know that you saw superbad before.
+  utter_faq/intent_339:
+  - text: i made sure to be in line to see it the first day it came out.
+  utter_faq/intent_340:
+  - text: i couldn't keep from laughing throughout the whole movie.
+  utter_faq/intent_341:
+  - text: i was laughing hysterically the whole time; my stomach muscles hurt afterwards.
+  utter_faq/intent_342:
+  - text: that's exactly how i felt.
+  utter_faq/intent_343:
+  - text: i got the movie when it came out on dvd, do you want to come over?
+  utter_faq/intent_344:
+  - text: i like listening to different kinds of music.
+  utter_faq/intent_345:
+  - text: like what, for instance?
+  utter_faq/intent_346:
+  - text: i enjoy rock and r&b.
+  utter_faq/intent_347:
+  - text: why is that?
+  utter_faq/intent_348:
+  - text: i like the different instruments that they use.
+  utter_faq/intent_349:
+  - text: that's a good reason to like something.
+  utter_faq/intent_350:
+  - text: yeah, i think so too.
+  utter_faq/intent_351:
+  - text: i enjoy listening to all kinds of music.
+  utter_faq/intent_352:
+  - text: what kind?
+  utter_faq/intent_353:
+  - text: i like to listen to rock and r&b.
+  utter_faq/intent_354:
+  - text: why do you like that type of music?
+  utter_faq/intent_355:
+  - text: i like the kinds of instruments that they use.
+  utter_faq/intent_356:
+  - text: i think that's an excellent reason to like something.
+  utter_faq/intent_357:
+  - text: thanks, i feel the same way.
+  utter_faq/intent_358:
+  - text: i listen to various types of music.
+  utter_faq/intent_359:
+  - text: what genres?
+  utter_faq/intent_360:
+  - text: i enjoy listening to both rock and r&b.
+  utter_faq/intent_361:
+  - text: what interests you in that type of music?
+  utter_faq/intent_362:
+  - text: i enjoy the different types of instruments that they use.
+  utter_faq/intent_363:
+  - text: that is a perfect reason to like a certain kind of music.
+  utter_faq/intent_364:
+  - text: no, i couldn't make it.
+  utter_faq/intent_365:
+  - text: you missed a really good game.
+  utter_faq/intent_366:
+  - text: oh, really? who won?
+  utter_faq/intent_367:
+  - text: our school did. they played really well.
+  utter_faq/intent_368:
+  - text: too bad i was busy. i really wanted to go.
+  utter_faq/intent_369:
+  - text: yeah, you should have. it was really exciting.
+  utter_faq/intent_370:
+  - text: so what was the score?
+  utter_faq/intent_371:
+  - text: the score was 101-98.
+  utter_faq/intent_372:
+  - text: man, that was a really close game.
+  utter_faq/intent_373:
+  - text: that's what made it so great.
+  utter_faq/intent_374:
+  - text: i'll make sure and make it to the next one.
+  utter_faq/intent_375:
+  - text: i was unable to make it.
+  utter_faq/intent_376:
+  - text: you should have been there. it was intense.
+  utter_faq/intent_377:
+  - text: is that right. who ended up winning?
+  utter_faq/intent_378:
+  - text: our team was victorious.
+  utter_faq/intent_379:
+  - text: i wish i was free that night. i'm kind of mad that i didn't go.
+  utter_faq/intent_380:
+  - text: it was a great game.
+  utter_faq/intent_381:
+  - text: what was the score at the end of the game?
+  utter_faq/intent_382:
+  - text: our team won 101-98.
+  utter_faq/intent_383:
+  - text: sounds like it was a close game.
+  utter_faq/intent_384:
+  - text: that's the reason it was such a great game.
+  utter_faq/intent_385:
+  - text: the next game, i will definitely be there.
+  utter_faq/intent_386:
+  - text: i wanted to go, but i couldn't.
+  utter_faq/intent_387:
+  - text: it was a great game.
+  utter_faq/intent_388:
+  - text: it's too bad that i couldn't make it. who won?
+  utter_faq/intent_389:
+  - text: our team played hard and won.
+  utter_faq/intent_390:
+  - text: i really wish i went to the game.
+  utter_faq/intent_391:
+  - text: it was the best game ever.
+  utter_faq/intent_392:
+  - text: so tell me the final score.
+  utter_faq/intent_393:
+  - text: the other team lost by three points, 101-98.
+  utter_faq/intent_394:
+  - text: it must've been a close game.
+  utter_faq/intent_395:
+  - text: it really was. you should've gone.
+  utter_faq/intent_396:
+  - text: i'm going to the movies with a friend. how about you?
+  utter_faq/intent_397:
+  - text: i'm not sure yet.
+  utter_faq/intent_398:
+  - text: well, did you want to go see a movie with me?
+  utter_faq/intent_399:
+  - text: what movie are you going to see?
+  utter_faq/intent_400:
+  - text: i'm not sure yet. is there something you want to see?
+  utter_faq/intent_401:
+  - text: there's nothing i can think of.
+  utter_faq/intent_402:
+  - text: so, did you want to go?
+  utter_faq/intent_403:
+  - text: no, thanks, maybe another time.
+  utter_faq/intent_404:
+  - text: okay, sounds good.
+  utter_faq/intent_405:
+  - text: i am going to see a movie with a friend of mine. what about you?
+  utter_faq/intent_406:
+  - text: i don't know.
+  utter_faq/intent_407:
+  - text: would you like to see a movie with me and my friend?
+  utter_faq/intent_408:
+  - text: do you know what movie you're going to watch?
+  utter_faq/intent_409:
+  - text: i don't know, but was there a certain movie you wanted to see?
+  utter_faq/intent_410:
+  - text: none that i can think of.
+  utter_faq/intent_411:
+  - text: well, would you like to go?
+  utter_faq/intent_412:
+  - text: thank you for inviting me, but i think i'll pass.
+  utter_faq/intent_413:
+  - text: all right. another time then.
+  utter_faq/intent_414:
+  - text: i'm going to the movie theater with my friend. what are you going to do?
+  utter_faq/intent_415:
+  - text: i'm not quite sure yet.
+  utter_faq/intent_416:
+  - text: how about you see a movie with me and my friend?
+  utter_faq/intent_417:
+  - text: what movie are you and your friend planning on watching?
+  utter_faq/intent_418:
+  - text: not sure. is there a movie out that catches your eye?
+  utter_faq/intent_419:
+  - text: no good movies come to mind.
+  utter_faq/intent_420:
+  - text: have you decided whether or not you would like to go?
+  utter_faq/intent_421:
+  - text: no, thanks. maybe another time.
+  utter_faq/intent_422:
+  - text: yeah, i went to school today. were you there?
+  utter_faq/intent_423:
+  - text: no, i didn't go, i've been sick.
+  utter_faq/intent_424:
+  - text: that sucks. did you want the assignments from english class?
+  utter_faq/intent_425:
+  - text: that would be nice, thank you.
+  utter_faq/intent_426:
+  - text: no problem, you're welcome.
+  utter_faq/intent_427:
+  - text: i will be glad to do the same for you when you're sick.
+  utter_faq/intent_428:
+  - text: well, thank you. i hope to see you at school tomorrow.
+  utter_faq/intent_429:
+  - text: i attended school today. did you?
+  utter_faq/intent_430:
+  - text: i wasn't able to attend school because i was feeling ill.
+  utter_faq/intent_431:
+  - text: i'm sorry to hear that. would you like the assignments from english class?
+  utter_faq/intent_432:
+  - text: i would really appreciate that, thanks.
+  utter_faq/intent_433:
+  - text: it's no trouble at all.
+  utter_faq/intent_434:
+  - text: if you get sick, i'll return the favor.
+  utter_faq/intent_435:
+  - text: thanks. see you at school tomorrow if you feel better.
+  utter_faq/intent_436:
+  - text: i went to school today. did you go to school?
+  utter_faq/intent_437:
+  - text: i couldn't go to school today, i was sick.
+  utter_faq/intent_438:
+  - text: that's horrible. i'd be happy to give you the assignments from english class.
+  utter_faq/intent_439:
+  - text: thank you very much, that's kind of you.
+  utter_faq/intent_440:
+  - text: don't mention it.
+  utter_faq/intent_441:
+  - text: when you miss a day of school, i'll be happy to give you the english assignments.
+  utter_faq/intent_442:
+  - text: what happened?
+  utter_faq/intent_443:
+  - text: our cousin went into labor and had her baby last week.
+  utter_faq/intent_444:
+  - text: she did? why didn't anyone tell me?
+  utter_faq/intent_445:
+  - text: i would've thought that somebody would have told you.
+  utter_faq/intent_446:
+  - text: no, i had no idea.
+  utter_faq/intent_447:
+  - text: well, she did, her baby was 8 pounds 6 ounces.
+  utter_faq/intent_448:
+  - text: oh my god, that's great!
+  utter_faq/intent_449:
+  - text: are you going to go and visit her and the baby?
+  utter_faq/intent_450:
+  - text: i think that i might.
+  utter_faq/intent_451:
+  - text: good! i just thought i'd let you know.
+  utter_faq/intent_452:
+  - text: thanks for telling me.
+  utter_faq/intent_453:
+  - text: heard what?
+  utter_faq/intent_454:
+  - text: debrah already had her baby.
+  utter_faq/intent_455:
+  - text: i didn't know that.
+  utter_faq/intent_456:
+  - text: i thought you knew.
+  utter_faq/intent_457:
+  - text: i honestly didn't know.
+  utter_faq/intent_458:
+  - text: the baby was 8 pounds 6 ounces.
+  utter_faq/intent_459:
+  - text: that's good to hear.
+  utter_faq/intent_460:
+  - text: will you go and visit them?
+  utter_faq/intent_461:
+  - text: of course i will.
+  utter_faq/intent_462:
+  - text: i just wanted to give you the good news.
+  utter_faq/intent_463:
+  - text: thanks for letting me know.
+  utter_faq/intent_464:
+  - text: i haven't heard anything.
+  utter_faq/intent_465:
+  - text: debrah had her baby last week.
+  utter_faq/intent_466:
+  - text: nobody told me.
+  utter_faq/intent_467:
+  - text: i thought you heard.
+  utter_faq/intent_468:
+  - text: i really wasn't told anything.
+  utter_faq/intent_469:
+  - text: she was a cute 8 pounds 6 ounces.
+  utter_faq/intent_470:
+  - text: wow, how exciting.
+  utter_faq/intent_471:
+  - text: i know, you should really go and see her and the baby.
+  utter_faq/intent_472:
+  - text: of course i will.
+  utter_faq/intent_473:
+  - text: i just wanted to let you know what happened.
+  utter_faq/intent_474:
+  - text: of course. did you?
+  utter_faq/intent_475:
+  - text: i didn't want to, so i didn't.
+  utter_faq/intent_476:
+  - text: that's sad, but have you gone to the movies recently?
+  utter_faq/intent_477:
+  - text: that's a switch.
+  utter_faq/intent_478:
+  - text: i'm serious, have you?
+  utter_faq/intent_479:
+  - text: no, i haven't. why?
+  utter_faq/intent_480:
+  - text: i really want to go to the movies this weekend.
+  utter_faq/intent_481:
+  - text: so go then.
+  utter_faq/intent_482:
+  - text: i really don't want to go by myself.
+  utter_faq/intent_483:
+  - text: well anyway, do you plan on going to school tomorrow?
+  utter_faq/intent_484:
+  - text: no, i think i'm going to go to the movies.
+  utter_faq/intent_485:
+  - text: i always do. did you go to school today?
+  utter_faq/intent_486:
+  - text: no, i didn't.
+  utter_faq/intent_487:
+  - text: you should have, but have you seen any movies lately?
+  utter_faq/intent_488:
+  - text: that was an odd change of subject.
+  utter_faq/intent_489:
+  - text: maybe it was, but answer the question.
+  utter_faq/intent_490:
+  - text: no, not recently.
+  utter_faq/intent_491:
+  - text: i want to go to see a movie this weekend.
+  utter_faq/intent_492:
+  - text: what's stopping you then?
+  utter_faq/intent_493:
+  - text: i don't want to go alone.
+  utter_faq/intent_494:
+  - text: so, will you be at school tomorrow?
+  utter_faq/intent_495:
+  - text: no, i want to go to the movies instead.
+  utter_faq/intent_496:
+  - text: yeah, i went. did you go?
+  utter_faq/intent_497:
+  - text: no, i didn't feel like it.
+  utter_faq/intent_498:
+  - text: that's nice, have you been to the movies lately?
+  utter_faq/intent_499:
+  - text: no, but that was a random change of subject.
+  utter_faq/intent_500:
+  - text: it may have been random, but have you?
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
